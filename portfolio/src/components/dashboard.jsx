@@ -1,5 +1,7 @@
 import React from "react";
-import { FaUserCircle, FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaPhone,  FaLinkedin } from "react-icons/fa";
+import MyImage from './1234.jpg';
+import resumePDF from './resume.pdf';
 
 function Dashboard() {
   return (
@@ -8,13 +10,15 @@ function Dashboard() {
 
         {/* Left Section */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <FaUserCircle className="text-indigo-500 text-7xl mb-4" />
+          <img src={MyImage} className=" mb-4 h-48 w-45 rounded-full" />
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Prabhakar Kumar</h1>
           <p className="text-lg text-gray-600 mb-1">Full Stack Developer</p>
           <p className="text-gray-500 mb-4">Bihar, India</p>
 
           <div className="flex gap-4 text-indigo-500 text-xl">
             <a href="https://www.linkedin.com/in/prabhakar-kumar-bcet/" className="hover:text-indigo-700" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+            <a href="https://github.com/prabhakar2k23" className="hover:text-indigo-700" target="_blank" rel="noreferrer"><FaGithub /></a>
+             
           </div>
         </div>
 
@@ -48,7 +52,17 @@ function Dashboard() {
             <p className="text-gray-600">
               I am a passionate developer who enjoys building modern, responsive web applications with clean UI/UX. Always eager to learn and grow in the tech field.
             </p>
+            <br />
+            <a
+             href={resumePDF}
+             target="_blank"
+             rel="noopener noreferrer"
+             className="border-2 rounded-full text-white px-4 py-1    hover:bg-blue-900 transition"
+             >
+              View Resume
+            </a>
           </div>
+         
         </div>
       </div>
     </div>

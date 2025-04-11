@@ -10,3 +10,41 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+# 🌟 My Portfolio (React + Vite + TailwindCSS)
+
+This is my personal portfolio built using **React**, **Vite**, and **TailwindCSS**.  
+It showcases my projects, skills, and contact information in a clean, responsive layout.
+
+---
+
+##  Project Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/prabhakar2k23/Portfolio
+
+# 2. Go to the project folder
+cd portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Install TailwindCSS (if you're setting it up manually)
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# 5. Configure tailwind.config.js
+# (make sure this content is present)
+# content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"]
+
+# 6. Add Tailwind to your CSS file (src/index.css or main.css)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+# 7. Start development server
+npm run dev
+
