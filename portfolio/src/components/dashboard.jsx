@@ -39,7 +39,7 @@ function Dashboard() {
               <span>Git & GitHub</span>
               <span>Python, Core Java</span>
               <span>MYSQL</span>
-              <span>Flux</span>
+              <span>Flask</span>
             </div>
           </div>
 
