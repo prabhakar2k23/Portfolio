@@ -33,17 +33,19 @@ cd portfolio
 npm install
 
 # 4. Install TailwindCSS (if you're setting it up manually)
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+npm install tailwindcss @tailwindcss/vite
 
-# 5. Configure tailwind.config.js
-# (make sure this content is present)
-# content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"]
+# Add in your vite.config.js file
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
 
 # 6. Add Tailwind to your CSS file (src/index.css or main.css)
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 # 7. Start development server
 npm run dev
